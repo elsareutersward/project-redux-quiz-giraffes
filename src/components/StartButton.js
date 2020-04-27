@@ -14,7 +14,7 @@ export const StartButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="moveOn"
+      className="startButton"
       type="button">
       Start quiz
     </button>

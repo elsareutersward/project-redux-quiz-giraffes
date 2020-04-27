@@ -14,7 +14,7 @@ export const RestartButton = () => {
   return (
     <button
       onClick={handleClick}
-      className="moveOn"
+      className="restartButton"
       type="button">
       Try again
     </button>

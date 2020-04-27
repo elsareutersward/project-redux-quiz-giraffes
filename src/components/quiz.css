@@ -5,8 +5,9 @@
   justify-content: space-around;
 }
 
-.questionText {
+.questionText, .welcomeText {
   font-size: 24px;
+  margin: 0px 20px;
 }
 
 .answerContainer {
@@ -22,45 +23,77 @@
   width: 100px;
   height: 80px;
   margin: 15px;
+  border: none;
   border-radius: 20px;
-  box-shadow: 2px 2px black;
+  background: #ffe3b5;
+  box-shadow:  5px 5px 10px #d1ba94, 
+              -5px -5px 10px #ffffd6;
+}
+
+.answerOption:hover {
+  box-shadow: inset 5px 5px 10px #d1ba94, 
+              inset -5px -5px 10px #ffffd6;
+}
+
+.green {
+  background: lightgreen;
 }
 
 .moveOn {
+  margin-top: 20px;
   width: 150px;
   height: 30px;
+  transition: all .4s ease-in-out;
+  border: none;
   border-radius: 30px;
-  transition: all .4s ease-in-out
+  background: #ffe3b5;
+  box-shadow:  3px 3px 2px #d1ba94, 
+             -3px -3px 2px #ffffd6;
 }
 
 .moveOn:hover {
-  opacity: .4;
+  box-shadow: inset 3px 3px 5px #d1ba94, 
+              inset -3px -3px 5px #ffffd6;
 }
 
 h1 {
   font-family: 'Paytone One', sans-serif;
 }
 
-p {
+p, span {
   font-family: 'Actor', sans-serif;
 }
 
-.welcomeContainer{
+.welcomeContainer, .summaryContainer {
   width:100%;
   display:flex;
   flex-direction: column;
   align-items:center;
   text-align:center;
 }
-.welcomeGreeting{
+
+.welcomeGreeting, .endGreeting {
   font-size: 68px;
   width:100%;
 }
-.startButton{
- width: 200px;
- height: 150px;
+
+.startButton, .restartButton {
+  width: 200px;
+  height: 50px;
+  margin-top: 50px;
+  transition: all .4s ease-in-out;
+  font-size: 18px;
+  background-color: #ffe3b5;
+  border: none;
+  border-radius: 30px;
+  background: #ffe3b5;
+  box-shadow:  5px 5px 10px #d1ba94, 
+              -5px -5px 10px #ffffd6;
 }
 
-.green {
-  background: lightgreen;
+.startButton:hover, .restartButton:hover {
+  box-shadow: inset 5px 5px 10px #d1ba94, 
+              inset -5px -5px 10px #ffffd6;
 }
+
+

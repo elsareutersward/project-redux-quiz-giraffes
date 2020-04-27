@@ -9,15 +9,10 @@ export const QuizContent = () => {
   const isOver = useSelector((state) => state.quiz.quizOver)
 
   if (!isStarted && !isOver) {
-    return (
-      <div>
-        <StartingPage />
-      </div>
-    )
+    return (<div><StartingPage /></div>)
   } else if (isStarted && !isOver) {
-    return (
-    <div><CurrentQuestion /></div>
-    )} else {
+    return (<div><CurrentQuestion /></div>)
+  } else {
     return (<div><Summary /></div>)
   }
 }
