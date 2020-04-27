@@ -5,9 +5,14 @@ export const Score = () => {
   const everyAnswer = useSelector((state) => state.quiz.answers)
   const correctAnswers = everyAnswer.filter((correct) => correct.isCorrect)
 
+  const result = correctAnswers.length * 1000000
+
   return (
     <div>
-      <h2 className="endGreeting">Congrats you got {correctAnswers.length * 1000000} points! <span role="img" aria-label="emoji">🎉</span></h2>
+      <h3 className="endGreeting">
+        {result > 2000000 ? `Congrats you got ${result} points! 🎉` : 
+          `Oh no, you only got ${result}! 😢 Please try again!`}
+      </h3>
     </div>
   )
 }

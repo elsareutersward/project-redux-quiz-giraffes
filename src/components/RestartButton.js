@@ -16,7 +16,7 @@ export const RestartButton = () => {
       onClick={handleClick}
       className="restartButton"
       type="button">
-      Try again
+      Play again
     </button>
   )
 }

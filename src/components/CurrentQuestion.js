@@ -26,7 +26,7 @@ export const CurrentQuestion = () => {
   return (
     <main className="currentQuestion">
       <img src={question.image} alt="Giraffe" />
-      <h1 className="questionText">{question.questionText}</h1>
+      <h2 className="questionText">{question.questionText}</h2>
       <div className="answerContainer">
         {question.options.map((answer, index) => {
           return (
