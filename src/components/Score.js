@@ -11,7 +11,7 @@ export const Score = () => {
     <div>
       <h3 className="endGreeting">
         {result > 2000000 ? `Congrats you got ${result} points! 🎉` : 
-          `Oh no, you only got ${result}! 😢 Please try again!`}
+          `Oh no, you only got ${result} points! 😢 Please try again!`}
       </h3>
     </div>
   )
