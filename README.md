@@ -8,7 +8,7 @@ The focus of the project was to practice working as a team while creating the qu
 
 ## Wiew it live
 
-https://pensive-jackson-d1872d.netlify.app
+https://er-project-redux-quiz.netlify.app/
 
 
 
